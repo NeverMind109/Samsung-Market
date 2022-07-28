@@ -126,6 +126,17 @@ a {
   position: relative;
 }
 
+.burger {
+  @include burger;
+
+  display: none;
+
+  @include tablet {
+    display: flex;
+    z-index: 100;
+  }
+}
+
 .section-title {
   font-size: 36px;
   line-height: 44px;
@@ -147,35 +158,44 @@ a {
 }
 
 .btn {
+  @include flex-v-center;
+
+  max-width: 260px;
   padding: 19px 39px;
   background-color: var(--color-main);
   border-radius: 5px;
   border: 1px solid var(--color-main);
-  &--white {
+  color: var(--color-light);
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+
+  .btn__cart-icon {
+    fill: currentColor;
+  }
+  &--secondary {
     padding: 9px 19px;
     background-color: var(--color-light);
     border: 1px solid var(--color-main);
+    color: var(--color-main);
+
+    .btn__cart-icon {
+      fill: currentColor;
+    }
+  }
+  &:hover {
+    background-color: var(--color-hover-blue);
+    border: 1px solid var(--color-hover-blue);
+    color: var(--color-light);
   }
   &__text {
-    position: relative;
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: (var(--color-light));
-    padding-right: 30px;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      margin-left: 10px;
-      background-image: url("../img/cart.svg");
-
-      @include bg-cover;
-    }
+    margin-right: 10px;
+  }
+  &__cart-icon {
+    width: 20px;
+    height: 20px;
   }
 }

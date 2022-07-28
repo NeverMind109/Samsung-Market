@@ -1,0 +1,45 @@
+.header {
+  @include flex-all-sb;
+
+  padding: 19px 30px;
+  background-color: var(--color-light);
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    margin-right: 20px;
+
+    @include small-tablet {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__descr {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-main);
+
+    @include big-desktop {
+      max-width: 220px;
+    }
+  }
+  &__btn {
+    display: flex;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    align-items: flex-start;
+  }
+}

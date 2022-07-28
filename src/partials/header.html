@@ -1,3 +1,54 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="header__info">
+    <a class="header__logo" href="index.html">
+      <img
+        class="logo__img"
+        src="img/logo.svg"
+        alt="Logo"
+        width="104"
+        height="40"
+      />
+    </a>
+    <span class="header__descr"
+      >Мощные, стильные смартфоны по выгодным ценам и оплатой после
+      получения</span
+    >
+  </div>
+  <nav class="nav" data-menu>
+    <ul class="list-reset nav__list">
+      <li class="nav__item">
+        <a class="descr nav__link" href="#" data-menu-item>Обзор</a>
+      </li>
+      <li class="nav__item">
+        <a class="descr nav__link" href="#" data-menu-item
+          >Фото и характеристики</a
+        >
+      </li>
+      <li class="nav__item">
+        <a class="descr nav__link" href="#" data-menu-item>Оплата и доставка</a>
+      </li>
+      <li class="nav__item">
+        <a class="btn btn--secondary nav__btn" href="#">
+          <span class="btn__text">заказать </span>
+          <svg class="btn__cart-icon">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <a class="btn btn--secondary header__btn" href="#">
+    <span class="btn__text">заказать </span>
+    <svg class="btn__cart-icon">
+      <use xlink:href="img/sprite.svg#cart"></use>
+    </svg>
+  </a>
+  <button
+    class="btn-reset burger"
+    aria-label="Открыть меню"
+    aria-expanded="false"
+    data-burger
+  >
+    <span class="burger__line"></span>
+  </button>
 </header>
