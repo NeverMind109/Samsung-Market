@@ -1,0 +1,15 @@
+.specification {
+  padding-bottom: 200px;
+  &__wrapper {
+    @include flex-v-center;
+
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__descr {
+    max-width: 730px;
+    margin-bottom: 50px;
+  }
+}
