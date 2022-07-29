@@ -1,0 +1,35 @@
+.banner {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    font-size: 0;
+  }
+  &__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+    @include flex-v-center;
+  }
+  &__descr {
+    font-size: 24px;
+    line-height: 44px;
+    color: var(--color-main);
+    margin-right: 70px;
+
+    span {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      color: var(--color-notice);
+      padding: 0 15px 0 5px;
+    }
+  }
+  &__img-2 {
+    margin-top: -130px;
+  }
+}

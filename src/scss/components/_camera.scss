@@ -1,0 +1,50 @@
+.camera {
+  background-color: var(--color-light);
+  padding-bottom: 200px;
+  &__wrapper {
+    @include flex-v-center;
+
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__descr {
+    max-width: 980px;
+    margin-bottom: 40px;
+  }
+  &__image {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  &__characteristic {
+    position: absolute;
+    display: inline-block;
+    &--1 {
+      bottom: 42%;
+      left: 0;
+    }
+    &--2 {
+      bottom: 30%;
+      left: 0;
+    }
+    &--3 {
+      bottom: 15%;
+      left: 0;
+    }
+    &--4 {
+      top: 1px;
+      right: 3px;
+    }
+  }
+  &__figure {
+    display: block;
+  }
+  &__name {
+    display: block;
+    text-align: left;
+  }
+  &__text {
+    max-width: 890px;
+  }
+}

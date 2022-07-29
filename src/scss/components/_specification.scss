@@ -1,4 +1,5 @@
 .specification {
+  background-color: var(--color-light);
   padding-bottom: 200px;
   &__wrapper {
     @include flex-v-center;

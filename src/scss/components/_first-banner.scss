@@ -1,0 +1,16 @@
+.first-banner {
+  padding-bottom: 200px;
+  padding-top: 124px;
+  &__wrapper {
+    background-color: var(--color-spring);
+  }
+  &__inner {
+    left: 23.5%;
+  }
+  &__descr {
+    max-width: 450px;
+  }
+  &__image {
+    padding-right: 171px;
+  }
+}

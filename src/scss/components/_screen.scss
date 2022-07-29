@@ -1,5 +1,6 @@
 .screen {
-  padding-bottom: 200px;
+  background-color: var(--color-light);
+  padding-bottom: 191px;
   &__wrapper {
     @include flex-v-center;
 

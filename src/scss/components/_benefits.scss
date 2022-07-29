@@ -1,0 +1,24 @@
+.benefits {
+  background-color: var(--color-light);
+  padding-bottom: 200px;
+  &__title {
+    text-align: center;
+    margin-bottom: 77px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+  &__descr {
+    max-width: 500px;
+    text-align: left;
+  }
+}
