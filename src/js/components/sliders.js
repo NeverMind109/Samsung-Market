@@ -10,3 +10,11 @@ const mainSlider = new Swiper(".hero__content", {
     delay: 3000,
   },
 });
+
+const typesSlider = new Swiper(".types__content", {
+  slidesPerView: 5,
+  spaceBetween: 0,
+  centeredSlides: true,
+  loop: true,
+  speed: 600,
+});

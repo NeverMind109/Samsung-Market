@@ -17,6 +17,9 @@
     position: relative;
     margin-bottom: 50px;
   }
+  &__img {
+    height: auto;
+  }
   &__characteristic {
     position: absolute;
     display: inline-block;

@@ -15,12 +15,10 @@
     .swiper-slide-active {
       padding-left: 120px;
       .hero__img-big {
-        height: 100%;
         width: 100%;
         opacity: 1;
       }
       .hero__img-small {
-        height: 0;
         width: 0;
       }
       .hero__img-back {
@@ -31,11 +29,10 @@
     }
     .swiper-slide-next {
       .hero__img-big {
-        height: 0;
         width: 0;
       }
       .hero__img-small {
-        height: 100%;
+        height: auto;
         width: 100%;
         opacity: 1;
       }
@@ -43,7 +40,7 @@
   }
   &__slide {
     display: flex;
-    align-self: flex-end;
+    align-items: flex-end;
   }
   &__img-big {
     position: relative;

@@ -34,8 +34,10 @@ import { burger } from "./functions/burger";
 // const modal = new GraphModal();
 
 // Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
+import GraphTabs from "graph-tabs";
+const typesTabs = new GraphTabs("types");
+typesTabs.switchTabs(document.querySelector("#types2"));
+const characteristicsTabs = new GraphTabs("characteristics");
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
