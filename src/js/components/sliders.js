@@ -9,6 +9,7 @@ const mainSlider = new Swiper(".hero__content", {
   autoplay: {
     delay: 3000,
   },
+  grabCursor: true,
 });
 
 const typesSlider = new Swiper(".types__content", {
@@ -17,4 +18,5 @@ const typesSlider = new Swiper(".types__content", {
   centeredSlides: true,
   loop: true,
   speed: 600,
+  grabCursor: true,
 });

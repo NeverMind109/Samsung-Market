@@ -1,0 +1,47 @@
+.subsequence {
+  background-color: var(--color-light);
+  padding-bottom: 100px;
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__list {
+    counter-reset: myCounter;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &__item {
+    @include flex-v-center;
+
+    padding: 10px 0;
+    border-bottom: 1px solid #737373;
+    &:not(:last-child) {
+      margin-bottom: 19px;
+    }
+    &:before {
+      counter-increment: myCounter;
+      content: "0" counter(myCounter);
+      font-family: "Inter", sans-serif;
+      font-weight: 200;
+      font-size: 48px;
+      line-height: 58px;
+      text-transform: uppercase;
+      color: var(--color-main);
+      margin-right: 50px;
+    }
+  }
+  &__step {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-main);
+  }
+  &__descr {
+    max-width: 260px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
