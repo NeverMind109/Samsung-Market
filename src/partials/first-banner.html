@@ -5,7 +5,7 @@
         <source srcset="img/banner-img-1.avif" type="image/avif" />
         <source srcset="img/banner-img-1.webp" type="image/webp" />
         <img
-          class="banner__img-1"
+          class="banner__img"
           loading="lazy"
           src="img/banner-img-1.png"
           width="579"
@@ -19,19 +19,23 @@
         Заказывайте флагманский смартфон Galaxy S20 всего за
         <span>9999</span>MXN
       </p>
-      <a class="btn banner__btn" href="#">
+      <button
+        class="btn-reset btn banner__btn"
+        data-graph-path="order-modal"
+        type="button"
+      >
         <span class="btn__text">заказать сейчас</span>
         <svg class="btn__cart-icon">
           <use xlink:href="img/sprite.svg#cart"></use>
         </svg>
-      </a>
+      </button>
     </div>
     <div class="banner__image first-banner__image">
       <picture>
         <source srcset="img/banner-img-2.avif" type="image/avif" />
         <source srcset="img/banner-img-2.webp" type="image/webp" />
         <img
-          class="banner__img-2"
+          class="banner__img"
           loading="lazy"
           src="img/banner-img-2.png"
           width="496"

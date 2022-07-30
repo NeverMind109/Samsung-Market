@@ -1,0 +1,17 @@
+.second-banner {
+  padding-top: 135px;
+  &__wrapper {
+    background-color: var(--color-periwinkle);
+  }
+  &__inner {
+    left: 27.5%;
+  }
+  &__descr {
+    max-width: 667px;
+    margin-right: 35px;
+  }
+  &__image {
+    padding-left: 24px;
+    margin-top: -130px;
+  }
+}

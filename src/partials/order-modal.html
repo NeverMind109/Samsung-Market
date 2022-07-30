@@ -1,0 +1,49 @@
+<div class="graph-modal order-modal">
+  <div
+    class="graph-modal__container order-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="order-modal"
+  >
+    <button
+      class="js-modal-close graph-modal__close order-modal__close"
+      aria-label="Закрыть модальное окно"
+    ></button>
+    <div class="graph-modal__content order-modal__content">
+      <span class="descr order-modal__info"
+        >Введите ваши данные, и наш менеджер свяжется с вами в ближайшее
+        время</span
+      >
+      <form class="order-modal__form" action="#">
+        <label class="order-modal__label" for="orderName">Ваше имя</label>
+        <input
+          class="order-modal__input"
+          type="text"
+          id="orderName"
+          placeholder="Александр"
+          required
+        />
+        <label class="order-modal__label" for="orderEmail"
+          >Ваш контактный телефон</label
+        >
+        <input
+          class="order-modal__input"
+          type="email"
+          id="orderEmail"
+          placeholder="+38 (_ _ _) _ _ _  _ _  _ _"
+          required
+        />
+        <button class="btn-reset order-modal__btn" type="submit">
+          <span class="order-modal__btn-text">заказать </span>
+          <svg class="order-modal__cart-icon">
+            <use xlink:href="img/sprite.svg#confirm-icon"></use>
+          </svg>
+        </button>
+      </form>
+      <span class="order-modal__text"
+        >Нажимая кнопку “Заказать”, вы соглашаетесь с
+        <a class="order-modal__link" href="#">Политикой конфиденциальности</a>
+      </span>
+    </div>
+  </div>
+</div>
