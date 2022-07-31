@@ -1,9 +1,13 @@
 .types {
   background-color: var(--color-light);
-  padding-bottom: 80px;
+  padding: 100px 0 80px;
   &__title {
     text-align: center;
     margin-bottom: 75px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
   &__content {
     overflow: hidden;
@@ -34,6 +38,19 @@
   }
   &__slide {
     @include flex-all-center;
+  }
+  &__img-big {
+    @include tablet {
+      height: 380px;
+    }
+    @include small-tablet {
+      height: 250px;
+    }
+  }
+  &__img-small {
+    @include small-tablet {
+      max-height: 170px;
+    }
   }
   &__nav {
     @include flex-all-center;
@@ -74,5 +91,9 @@
   .tabs__nav-btn--active {
     width: 30px;
     height: 30px;
+  }
+
+  @include mobile {
+    padding: 50px 0;
   }
 }

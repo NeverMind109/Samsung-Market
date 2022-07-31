@@ -12,6 +12,10 @@
   &__descr {
     max-width: 980px;
     margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 55px;
+    }
   }
   &__image {
     position: relative;
@@ -19,6 +23,29 @@
   }
   &__img {
     height: auto;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__img-tablet {
+    height: auto;
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+    @include small-tablet {
+      display: none;
+    }
+  }
+  &__img-mobile {
+    height: auto;
+    display: none;
+
+    @include small-tablet {
+      display: block;
+    }
   }
   &__characteristic {
     position: absolute;
@@ -26,28 +53,113 @@
     &--1 {
       bottom: 42%;
       left: 0;
+
+      @include tablet {
+        left: -24%;
+        bottom: 48%;
+      }
+      @include small-tablet {
+        left: -12%;
+        top: 20%;
+      }
+      @include mobile {
+        left: -3%;
+      }
     }
     &--2 {
       bottom: 30%;
       left: 0;
+
+      @include tablet {
+        left: -24%;
+        bottom: 31%;
+      }
+      @include small-tablet {
+        left: -12%;
+        top: 55%;
+      }
+      @include mobile {
+        left: -3%;
+      }
     }
     &--3 {
       bottom: 15%;
       left: 0;
+
+      @include tablet {
+        left: -24%;
+        bottom: 14%;
+      }
+      @include small-tablet {
+        left: -13%;
+        bottom: -9%;
+      }
+      @include mobile {
+        left: -3%;
+      }
     }
     &--4 {
       top: 1px;
       right: 3px;
+
+      @include desktop {
+        top: -4px;
+      }
+      @include tablet {
+        top: -17px;
+        right: -22%;
+      }
+      @include small-tablet {
+        top: -34px;
+        right: -25%;
+      }
+      @include mobile {
+        top: -34px;
+        right: -7%;
+      }
+    }
+
+    @include small-tablet {
+      max-width: 110px;
+    }
+    @include mobile {
+      max-width: 90px;
     }
   }
   &__figure {
     display: block;
+    text-align: left;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 34px;
+    }
+    @include small-tablet {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &__name {
     display: block;
     text-align: left;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
   &__text {
     max-width: 890px;
+  }
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+  @include mobile {
+    padding-bottom: 50px;
   }
 }

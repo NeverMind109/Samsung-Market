@@ -6,6 +6,13 @@
 
     max-width: 1110px;
     margin: 0 auto;
+
+    @include tablet {
+      max-width: none;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__text {
     font-size: 14px;
@@ -16,6 +23,10 @@
     transition: color 0.3s;
     &:hover {
       color: var(--color-hover-blue);
+    }
+
+    @include mobile {
+      margin-bottom: 15px;
     }
   }
 }

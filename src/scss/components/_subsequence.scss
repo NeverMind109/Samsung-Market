@@ -9,10 +9,13 @@
     counter-reset: myCounter;
     max-width: 900px;
     margin: 0 auto;
+
+    @include tablet {
+      max-width: none;
+    }
   }
   &__item {
-    @include flex-v-center;
-
+    display: flex;
     padding: 10px 0;
     border-bottom: 1px solid #737373;
     &:not(:last-child) {
@@ -28,20 +31,51 @@
       text-transform: uppercase;
       color: var(--color-main);
       margin-right: 50px;
+
+      @include tablet {
+        font-size: 36px;
+        line-height: 44px;
+        margin-right: 20px;
+      }
+    }
+  }
+  &__content {
+    @include flex-all-sb;
+
+    width: 100%;
+
+    @include tablet {
+      display: block;
     }
   }
   &__step {
+    display: inline-block;
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-main);
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 15px;
+    }
   }
   &__descr {
     max-width: 260px;
     text-align: left;
     margin-left: auto;
     margin-right: 0;
+
+    @include tablet {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 50px;
   }
 }

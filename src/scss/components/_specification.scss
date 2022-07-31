@@ -1,6 +1,6 @@
 .specification {
   background-color: var(--color-light);
-  padding-bottom: 200px;
+  padding: 100px 0 200px;
   &__wrapper {
     @include flex-v-center;
 
@@ -12,8 +12,26 @@
   &__descr {
     max-width: 730px;
     margin-bottom: 50px;
+
+    @include tablet {
+      max-width: none;
+    }
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
   &__img {
     height: auto;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    padding: 100px 0;
+  }
+  @include mobile {
+    padding: 50px 0;
   }
 }

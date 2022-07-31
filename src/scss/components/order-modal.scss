@@ -5,12 +5,14 @@
     background-color: var(--color-light);
     border-radius: 10px;
     padding: 30px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
   &__close {
     width: 15px;
     height: 15px;
-  }
-  &__content {
   }
   &__info {
     display: inline-block;
@@ -50,6 +52,7 @@
     background-color: var(--color-main);
     color: var(--color-light);
     border-radius: 5px;
+    transition: background-color 0.3s;
     margin-top: 20px;
     &:hover {
       background-color: var(--color-hover-blue);

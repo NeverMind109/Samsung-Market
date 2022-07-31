@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header__info">
-    <a class="header__logo" href="index.html">
+    <a class="logo header__logo" href="index.html">
       <img
         class="logo__img"
         src="img/logo.svg"
@@ -17,23 +17,31 @@
   <nav class="nav" data-menu>
     <ul class="list-reset nav__list">
       <li class="nav__item">
-        <a class="descr nav__link" href="#" data-menu-item>Обзор</a>
+        <a class="descr nav__link" href="#review-section" data-menu-item
+          >Обзор</a
+        >
       </li>
       <li class="nav__item">
-        <a class="descr nav__link" href="#" data-menu-item
+        <a class="descr nav__link" href="#photo-section" data-menu-item
           >Фото и характеристики</a
         >
       </li>
       <li class="nav__item">
-        <a class="descr nav__link" href="#" data-menu-item>Оплата и доставка</a>
+        <a class="descr nav__link" href="#delivery-section" data-menu-item
+          >Оплата и доставка</a
+        >
       </li>
       <li class="nav__item">
-        <a class="btn btn--secondary nav__btn" href="#">
+        <button
+          class="btn-reset btn btn--secondary nav__btn"
+          data-graph-path="order-modal"
+          type="button"
+        >
           <span class="btn__text">заказать </span>
           <svg class="btn__cart-icon">
             <use xlink:href="img/sprite.svg#cart"></use>
           </svg>
-        </a>
+        </button>
       </li>
     </ul>
   </nav>

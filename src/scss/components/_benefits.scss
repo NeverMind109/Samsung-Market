@@ -4,14 +4,32 @@
   &__title {
     text-align: center;
     margin-bottom: 77px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include desktop {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__content {
+    @include desktop {
+      margin: 25px 0;
+    }
   }
   &__info {
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    @include desktop {
+      text-align: center;
     }
   }
   &__subtitle {
@@ -20,11 +38,34 @@
   &__descr {
     max-width: 500px;
     text-align: left;
+
+    @include desktop {
+      text-align: center;
+    }
   }
-  &__img-1 {
+  &__img {
     height: auto;
+
+    @include desktop {
+      width: 300px;
+      height: 290px;
+    }
+    @include tablet {
+      width: 250px;
+      height: 225px;
+    }
+    @include mobile {
+      height: 150px;
+    }
   }
-  &__img-2 {
-    height: auto;
+
+  @include desktop {
+    padding-bottom: 75px;
+  }
+  @include small-tablet {
+    padding-bottom: 50px;
+  }
+  @include mobile {
+    padding-bottom: 25px;
   }
 }
