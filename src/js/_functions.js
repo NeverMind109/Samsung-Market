@@ -72,6 +72,10 @@ const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 300,
   speedAsDuration: true,
 });
+window.scrollTo({
+  top: 0,
+  behavior: "instant",
+});
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';
